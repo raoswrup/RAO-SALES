@@ -1,197 +1,139 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>RAO SALES</title>
+<h1>RAO SALES</h1>
 
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial,sans-serif;
-}
+<!-- Samsung A16 -->
 
-body{
-    background:#f1f3f6;
-}
+<div class="product">
 
-header{
-    background:#131921;
-    color:white;
-    padding:15px;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-}
+<h2>Samsung Galaxy A16 5G</h2>
 
-.logo{
-    font-size:30px;
-    font-weight:bold;
-    color:#ff9900;
-}
+<img src="a16-1.jpg" width="180">
+<img src="a16-2.jpg" width="180">
+<img src="a16-3.jpg" width="180">
+<img src="a16-4.jpg" width="180">
 
-.search{
-    width:50%;
-    padding:10px;
-    border:none;
-    border-radius:5px;
-}
+<p><b>Price:</b> ₹15,999</p>
+<p>⭐⭐⭐⭐☆ (4.3/5)</p>
 
-.cart{
-    font-size:20px;
-}
+<h3>Features</h3>
 
-.banner{
-    background:linear-gradient(90deg,#2874f0,#ff9900);
-    color:white;
-    text-align:center;
-    padding:50px;
-}
+<ul>
+<li>6.7" FHD+ Display</li>
+<li>128GB Storage</li>
+<li>50MP Camera</li>
+<li>5000mAh Battery</li>
+<li>Fast Charging</li>
+<li>1 Year Warranty</li>
+</ul>
 
-.banner h1{
-    font-size:50px;
-}
+<p>🚚 FREE Delivery</p>
+<p>🔄 7 Days Return</p>
+<p>💵 Cash on Delivery Available</p>
 
-.products{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:20px;
-    padding:20px;
-}
+<button>Buy Now (COD)</button>
 
-.card{
-    background:white;
-    border-radius:10px;
-    overflow:hidden;
-    box-shadow:0 2px 8px rgba(0,0,0,0.2);
-    transition:.3s;
-}
-
-.card:hover{
-    transform:translateY(-5px);
-}
-
-.card img{
-    width:100%;
-    height:220px;
-    object-fit:cover;
-}
-
-.card-content{
-    padding:15px;
-}
-
-.price{
-    color:green;
-    font-size:22px;
-    font-weight:bold;
-}
-
-button{
-    width:100%;
-    padding:10px;
-    background:#ff9900;
-    border:none;
-    color:white;
-    font-size:16px;
-    cursor:pointer;
-    border-radius:5px;
-    margin-top:10px;
-}
-
-button:hover{
-    background:#e68a00;
-}
-
-footer{
-    background:#131921;
-    color:white;
-    text-align:center;
-    padding:20px;
-    margin-top:20px;
-}
-</style>
-</head>
-<body>
-
-<header>
-    <div class="logo">RAO SALES</div>
-    <input type="text" class="search" placeholder="Search Products...">
-    <div class="cart">🛒 Cart (<span id="count">0</span>)</div>
-</header>
-
-<section class="banner">
-    <h1>RAO SALES</h1>
-    <p>India's Smart Shopping Store</p>
-</section>
-
-<section class="products">
-<div class="card">
-    <img src="a16.jpg"
-alt="Samsung Galaxy A16">
-    <div class="card-content">
-        <h3>Samsung Galaxy 
-A16</h3> 
-        <p
-class="price">₹14,999</p>
-        <button
-onclick="addToCart()">Add to
-Cart</button>
-    </div>
 </div>
-    <div class="card">
-        <img src="https://picsum.photos/300/220?1">
-        <div class="card-content">
-            <h3>Smartphone</h3>
-            <p class="price">₹19,999</p>
-            <button onclick="addToCart()">Add to Cart</button>
-        </div>
-    </div>
 
-    <div class="card">
-        <img src="https://picsum.photos/300/220?2">
-        <div class="card-content">
-            <h3>Laptop</h3>
-            <p class="price">₹59,999</p>
-            <button onclick="addToCart()">Add to Cart</button>
-        </div>
-    </div>
+<hr>
 
-    <div class="card">
-        <img src="https://picsum.photos/300/220?3">
-        <div class="card-content">
-            <h3>Headphones</h3>
-            <p class="price">₹2,499</p>
-            <button onclick="addToCart()">Add to Cart</button>
-        </div>
-    </div>
+<!-- boAt Earbuds -->
 
-    <div class="card">
-        <img src="https://picsum.photos/300/220?4">
-        <div class="card-content">
-            <h3>Smart Watch</h3>
-            <p class="price">₹4,999</p>
-            <button onclick="addToCart()">Add to Cart</button>
-        </div>
-    </div>
+<div class="product">
 
-</section>
+<h2>boAt Airdopes 141</h2>
 
-<footer>
-    © 2026 RAO SALES | All Rights Reserved
-</footer>
+<img src="boat1.jpg" width="180">
+<img src="boat2.jpg" width="180">
+<img src="boat3.jpg" width="180">
+<img src="boat4.jpg" width="180">
 
-<script>
-let cart=0;
+<p><b>Price:</b> ₹1,299</p>
+<p>⭐⭐⭐⭐⭐ (4.5/5)</p>
 
-function addToCart(){
-    cart++;
-    document.getElementById("count").innerText=cart;
-    alert("Product Added to Cart!");
-}
-</script>
+<h3>Features</h3>
 
-</body>
-</html>
+<ul>
+<li>42 Hours Playback</li>
+<li>Bluetooth 5.1</li>
+<li>Fast Charging</li>
+<li>Low Latency Mode</li>
+<li>Water Resistant</li>
+<li>1 Year Warranty</li>
+</ul>
+
+<p>🚚 FREE Delivery</p>
+<p>🔄 7 Days Return</p>
+<p>💵 Cash on Delivery Available</p>
+
+<button>Buy Now (COD)</button>
+
+</div>
+
+<hr>
+
+<!-- Noise Watch -->
+
+<div class="product">
+
+<h2>Noise ColorFit Smart Watch</h2>
+
+<img src="watch1.jpg" width="180">
+<img src="watch2.jpg" width="180">
+<img src="watch3.jpg" width="180">
+<img src="watch4.jpg" width="180">
+
+<p><b>Price:</b> ₹1,999</p>
+<p>⭐⭐⭐⭐☆ (4.2/5)</p>
+
+<h3>Features</h3>
+
+<ul>
+<li>Bluetooth Calling</li>
+<li>Heart Rate Monitor</li>
+<li>Sleep Tracking</li>
+<li>100+ Sports Modes</li>
+<li>7 Days Battery</li>
+<li>1 Year Warranty</li>
+</ul>
+
+<p>🚚 FREE Delivery</p>
+<p>🔄 7 Days Return</p>
+<p>💵 Cash on Delivery Available</p>
+
+<button>Buy Now (COD)</button>
+
+</div>
+
+<hr>
+
+<!-- Mi Power Bank -->
+
+<div class="product">
+
+<h2>Mi Power Bank 10000mAh</h2>
+
+<img src="power1.jpg" width="180">
+<img src="power2.jpg" width="180">
+<img src="power3.jpg" width="180">
+<img src="power4.jpg" width="180">
+
+<p><b>Price:</b> ₹1,299</p>
+<p>⭐⭐⭐⭐☆ (4.4/5)</p>
+
+<h3>Features</h3>
+
+<ul>
+<li>10000mAh Capacity</li>
+<li>Fast Charging</li>
+<li>Dual USB Ports</li>
+<li>Compact Design</li>
+<li>LED Indicator</li>
+<li>6 Months Warranty</li>
+</ul>
+
+<p>🚚 FREE Delivery</p>
+<p>🔄 7 Days Return</p>
+<p>💵 Cash on Delivery Available</p>
+
+<button>Buy Now (COD)</button>
+
+</div>
