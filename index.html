@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>RAO SALES</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <style>
-body{
-font-family:Arial;
+*{
 margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
 background:#f1f3f6;
 }
 
@@ -15,13 +21,13 @@ background:#f1f3f6;
 background:#131921;
 padding:10px;
 display:flex;
-gap:10px;
 align-items:center;
+gap:10px;
 }
 
 .logo{
 color:#ff9900;
-font-size:28px;
+font-size:30px;
 font-weight:bold;
 }
 
@@ -29,15 +35,31 @@ font-weight:bold;
 flex:1;
 padding:10px;
 border:none;
-border-radius:4px;
+border-radius:5px;
 }
 
-.cart{
-background:#ff9900;
-padding:10px;
-border:none;
+.banner{
+background:#232f3e;
+color:white;
+text-align:center;
+padding:40px;
+font-size:30px;
 font-weight:bold;
-cursor:pointer;
+}
+
+.categories{
+display:flex;
+justify-content:center;
+gap:15px;
+padding:15px;
+flex-wrap:wrap;
+}
+
+.cat{
+background:white;
+padding:10px 20px;
+border-radius:8px;
+font-weight:bold;
 }
 
 .products{
@@ -55,15 +77,15 @@ text-align:center;
 }
 
 .product img{
-width:200px;
-height:200px;
+width:180px;
+height:180px;
 object-fit:contain;
 }
 
 .price{
+color:#B12704;
 font-size:22px;
 font-weight:bold;
-color:#B12704;
 }
 
 .btn{
@@ -75,12 +97,24 @@ cursor:pointer;
 font-weight:bold;
 }
 
-.add{
+.cart{
 background:#FFD814;
+}
+
+.wish{
+background:#e7e7e7;
 }
 
 .buy{
 background:#FFA41C;
+}
+
+.footer{
+background:#131921;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:20px;
 }
 </style>
 </head>
@@ -90,111 +124,58 @@ background:#FFA41C;
 <div class="header">
 <div class="logo">RAO SALES</div>
 
-<input
-class="search"
+<input class="search"
 type="text"
-placeholder="Search Products">
+placeholder="Search products...">
+</div>
 
-<button class="cart">
-🛒 Cart
-</button>
+<div class="banner">
+Welcome to RAO SALES
+</div>
+
+<div class="categories">
+<div class="cat">📱 Mobiles</div>
+<div class="cat">🎧 Earbuds</div>
+<div class="cat">⌚ Watches</div>
+<div class="cat">🔋 Accessories</div>
 </div>
 
 <div class="products">
 
 <div class="product">
-<img src="a16.jpg.jpeg">
-
-<h3>Samsung Galaxy A16 5G</h3>
-
+<img src="a16.jpg">
+<h3>Samsung Galaxy A16</h3>
 <p class="price">₹15,999</p>
-
-<p>
-⭐⭐⭐⭐☆ 4.3/5
-</p>
-
-<p>
-128GB Storage<br>
-50MP Camera<br>
-5000mAh Battery<br>
-1 Year Warranty
-</p>
-
-<p>🚚 Free Delivery</p>
-<p>💵 Cash on Delivery</p>
-
-<button class="btn add">
-Add To Cart
-</button>
-
-<button class="btn buy">
-Buy Now
-</button>
-
+<p>⭐⭐⭐⭐☆ 4.3/5</p>
+<button class="btn cart">Add to Cart</button>
+<button class="btn wish">Wishlist</button>
+<button class="btn buy">Buy Now</button>
 </div>
 
 <div class="product">
 <img src="boat.jpg">
-
 <h3>boAt Airdopes 141</h3>
-
 <p class="price">₹1,299</p>
-
-<p>
-⭐⭐⭐⭐⭐ 4.5/5
-</p>
-
-<p>
-42 Hours Playback<br>
-Bluetooth 5.1<br>
-Fast Charging<br>
-1 Year Warranty
-</p>
-
-<p>🚚 Free Delivery</p>
-<p>💵 Cash on Delivery</p>
-
-<button class="btn add">
-Add To Cart
-</button>
-
-<button class="btn buy">
-Buy Now
-</button>
-
+<p>⭐⭐⭐⭐⭐ 4.5/5</p>
+<button class="btn cart">Add to Cart</button>
+<button class="btn wish">Wishlist</button>
+<button class="btn buy">Buy Now</button>
 </div>
 
 <div class="product">
 <img src="watch.jpg">
-
 <h3>Noise Smart Watch</h3>
-
 <p class="price">₹1,999</p>
-
-<p>
-⭐⭐⭐⭐☆ 4.2/5
-</p>
-
-<p>
-Bluetooth Calling<br>
-Heart Rate Monitor<br>
-100+ Sports Modes<br>
-7 Days Battery
-</p>
-
-<p>🚚 Free Delivery</p>
-<p>💵 Cash on Delivery</p>
-
-<button class="btn add">
-Add To Cart
-</button>
-
-<button class="btn buy">
-Buy Now
-</button>
+<p>⭐⭐⭐⭐☆ 4.2/5</p>
+<button class="btn cart">Add to Cart</button>
+<button class="btn wish">Wishlist</button>
+<button class="btn buy">Buy Now</button>
+</div>
 
 </div>
 
+<div class="footer">
+© 2026 RAO SALES | Cash on Delivery Available
 </div>
 
 </body>
